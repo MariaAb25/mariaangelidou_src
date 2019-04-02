@@ -1,0 +1,81 @@
+{% extends 'layouts/base.html.njk' %}
+
+{% set pageTitle = 'Contact' %}
+
+{% block styles %}
+    <style>
+
+        .contact .border-bottom {
+            border-bottom:0.1rem solid #8C8C8C !important;
+        }
+
+        .contact .info a:hover {
+            text-decoration: none;
+        }
+
+        .contact .info h4 {
+            font-size:1.3rem;
+        }
+
+        @media (max-width : 992px) {
+
+            .navbar-nav {
+                background-color: #FE9DBA!important;
+            }
+        }
+
+    </style>
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="contact pt-2 pt-md-5 pb-md-4">
+        <div class="container">
+            <div class="col-xl-9 mx-auto">
+                <div class="info pt-4 mt-2">
+                    <div class="d-flex pb-2">
+                        <h4 class="font-weight-light mr-2">
+                            Name:
+                        </h4>
+                        <h4 class="font-weight-light w-100 border-bottom">
+                            <span class="ml-3">Maria Angelidou</span>
+                        </h4>
+                    </div>
+                    <div class="d-flex pb-2">
+                        <h4 class="font-weight-light mr-2">
+                            Email:
+                        </h4>
+                        <h4 class="font-weight-light w-100 border-bottom">
+                            <a href="mailto:m.angelidou@hotmail.com" target="_top">
+                                <span class="ml-3">m.angelidou@hotmail.com</span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="d-flex pb-2">
+                        <h4 class="font-weight-light mr-2">
+                            Location:
+                        </h4>
+                        <h4 class="font-weight-light w-100 border-bottom">
+                            <span class="ml-3">Nicosia, Cyprus</span>
+                        </h4>
+                    </div>
+                    <div class="d-flex pb-2">
+                        <h4 class="font-weight-light mr-2">
+                            Phone:
+                        </h4>
+                        <h4 class="font-weight-light w-100 border-bottom">
+                            <a href="tel:+96522286001">
+                                <span class="ml-3">+357 99 821598</span>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+
+

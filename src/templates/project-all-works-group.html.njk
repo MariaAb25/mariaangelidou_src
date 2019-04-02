@@ -1,0 +1,83 @@
+{% extends 'layouts/base.html.njk' %}
+
+{% set pageTitle = 'Logo & B.I Projects' %}
+
+{% block styles %}
+    <style>
+
+        @media (max-width : 992px) {
+
+            .navbar-nav {
+                background-color: #FE9DBA!important;
+            }
+        }
+
+    </style>
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="project-cover pt-4">
+        <div class="container">
+            <a href="/{{ path('projects-logo-and-bi.html') }}">
+                < Back
+            </a>
+            <div class="nav-cover pt-3">
+                <div class="cover-image">
+                    <div class="col-lg-8 mx-auto">
+                        <img class="img-fluid" src="https://via.placeholder.com/915x610" alt="project">
+                        <p class="small-1">LOGO DESIGN</p>
+                    </div>
+                    <div class="nav-arrows d-flex align-items-center justify-content-end justify-content-lg-between h-100">
+                        <div class="p-2 text-left">
+                            <a href="/{{ path('project-all-works-group.html') }}">
+                                Previous
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <a href="/{{ path('project-all-works-group.html') }}">
+                                Next
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">All Works Group</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    ly dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's sIn this projec
+                    ttandard dummy text ever since the 1500s, when an unknown printer took a galley of type and In this project
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the In this project
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="mb-4 img-fluid" src="https://via.placeholder.com/915x610" alt="project">
+                <img class="mb-4 img-fluid" src="https://via.placeholder.com/915x610" alt="project">
+                <img class="mb-4 img-fluid" src="https://via.placeholder.com/915x610" alt="project">
+                <img class="mb-4 img-fluid" src="https://via.placeholder.com/915x610" alt="project">
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

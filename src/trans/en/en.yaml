@@ -1,0 +1,6 @@
+locale: en
+trans:
+    !!import/merge [
+        # IMPORTS MUST BEGIN WITH UNDERSCORE
+        '_navbar.yaml',
+    ]
