@@ -8,11 +8,31 @@
             background-color: #FE9DBA!important;
         }
 
+        .overview .project-card {
+            margin-bottom: 1.2rem;
+        }
+
+
         @media (max-width : 992px) {
 
             .navbar {
                 background-color: #FE9DBA!important;
             }
+
+        }
+
+
+        @media (min-width : 1400px) {
+
+            .overview .project-card {
+                margin-bottom: 1.8rem;
+                margin-left: 0.6rem;
+            }
+
+            .project-card.middle img {
+                max-height: 704px !important;
+            }
+
         }
     </style>
 
@@ -21,27 +41,31 @@
 {% block content %}
 
     <section class="overview bg-carnation-pink pt-md-2 pb-md-2">
-        <div class="container">
-            <div class="card-columns ml-1 mr-1">
-                <div class="card">
-                    <a href="/{{ path('projects-logo-and-bi.html') }}">
-                        <img class="card-img-top" src="https://via.placeholder.com/455x360" alt="Card image cap">
-                    </a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/455x360" alt="Card image cap">
-                </div>
-                <div class="card">
-                    <img class="card-img" src="https://via.placeholder.com/455x740" alt="Card image">
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/455x360" alt="Card image cap">
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/455x360" alt="Card image cap">
+
+            <div class="row no-gutters justify-content-center">
+                <div class="col-10 col-lg-10 col-xl-11">
+                    <div class="card-columns text-center">
+                        <div class="project-card">
+                            <a href="/{{ path('projects-logo-and-bi.html') }}">
+                                <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                        </div>
+                        <div class="project-card middle">
+                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x875" alt="Card image">
+                        </div>
+                        <div class="project-card">
+                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                        </div>
+                        <div class="project-card">
+                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
     </section>
 
 {% endblock %}
