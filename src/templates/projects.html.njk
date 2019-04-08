@@ -29,10 +29,6 @@
                 margin-left: 0.6rem;
             }
 
-            .project-card.middle img {
-                max-height: 704px !important;
-            }
-
         }
     </style>
 
@@ -42,31 +38,56 @@
 
     <section class="overview bg-carnation-pink pt-md-2 pb-md-2">
 
-            <div class="row no-gutters justify-content-center">
+            <div class="row no-gutters justify-content-center jQueryEqualHeight">
                 <div class="col-10 col-lg-10 col-xl-11">
                     <div class="card-columns text-center">
                         <div class="project-card">
                             <a href="/{{ path('projects-logo-and-bi.html') }}">
-                                <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                                <img class="rounded img-fluid w-100" src="{{ asset('images/projects/logos.png') }}" alt="logos">
                             </a>
                         </div>
                         <div class="project-card">
-                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                            <img class="rounded img-fluid w-100" src="{{ asset('images/projects/posters.png') }}" alt="posters">
                         </div>
                         <div class="project-card middle">
-                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x875" alt="Card image">
+                            <img class="rounded img-fluid w-100" src="{{ asset('images/projects/websites.png') }}" alt="websites">
                         </div>
                         <div class="project-card">
-                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                            <img class="rounded img-fluid w-100" src="{{ asset('images/projects/illu.png') }}" alt="Card image cap">
                         </div>
                         <div class="project-card">
-                            <img class="rounded img-fluid w-100" src="https://via.placeholder.com/522x415" alt="Card image cap">
+                            <img class="rounded img-fluid w-100" src="{{ asset('images/projects/other.png') }}" alt="Card image cap">
                         </div>
                     </div>
                 </div>
             </div>
-
     </section>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script>
+        function resizeCard(){
+            if (jQuery(window).width() < 1400) {
+                const cardHeight = $('.project-card img').height();
+                console.log()
+
+                const middle = $('.project-card.middle img');
+                middle.height(function (index, height) {
+                    return ((cardHeight*2)+22);
+                });
+            }
+        }
+        
+        $(window).on('load', function(event) {
+            resizeCard();
+        });
+
+        window.onresize = function(event) {
+            resizeCard();
+        };
+    </script>
 
 {% endblock %}
 

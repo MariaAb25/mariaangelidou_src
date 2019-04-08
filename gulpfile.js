@@ -61,7 +61,7 @@ gulp.task('nunjucksRender', function () {
                         return str;
                     });
 
-                    environment.addGlobal('projectTitle', 'NUNJUCKS PROJECT TEMPLATE');
+                    environment.addGlobal('projectTitle', 'Maria Angelidou Graphic Designer');
                 },
                 loaders: null
             }))
