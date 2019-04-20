@@ -1,0 +1,37 @@
+{% set pageTitle = 'Angelos M. Exhibition' %}
+{% set pageClass = 'project posters' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-posters.html',
+        next_url: 'project-drasi-tora-1.html',
+        prev_url: 'project-a-markides-1.html',
+        intro_title: 'OSTER DESIGNS FOR EXHIBITION',
+        intro_img: 'images/project/a-markides-2/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">Angelos M. Exhibition</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    This poster is also from my University years. I focused making this poster by using type and position.
+                    I wanted to promote the modern style and characteristics of the specific exhibition of Angelos Makrides.
+                </p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

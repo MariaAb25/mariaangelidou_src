@@ -16,15 +16,6 @@ body{
   transition: opacity 300ms;
 }
 
-.project-cover img {
-  opacity: 0;
-  -webkit-transition: all .75s ease;
-  -moz-transition: all .75s ease;
-  -ms-transition: all .75s ease;
-  -o-transition: all .75s ease;
-  transition: all .75s ease;
-}
-
 .border-grey {
   border-color:#BBBBBB!important;
 }

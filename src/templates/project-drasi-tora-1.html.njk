@@ -1,0 +1,42 @@
+{% set pageTitle = '"ΔΡΑΣΗ ΤΩΡΑ"' %}
+{% set pageClass = 'project posters' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-posters.html',
+        next_url: 'project-drasi-tora-2.html',
+        prev_url: 'project-a-markides-2.html',
+        intro_title: 'POSTER DESIGN, COMPETITION',
+        intro_img: 'images/project/drasi-tora-1/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">"ΔΡΑΣΗ ΤΩΡΑ"</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    These posters were sent in a competition from my University years.
+                    In this competition we had to pass through the message about violence against Women.
+                    I wanted to lure the victims and people to stand up and stop the violence against innocent women by
+                    bringing awareness.In this poster I wanted to show that victims can become like puppets in the
+                    hands of their violators. Victims loose their voice, their will and they hide their problems and
+                    sadness from the rest of the word with the fear of being judged or get more harm from their violator.
+                    I used textures, images, illustration collages and my handmade typeface.
+                </p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+
