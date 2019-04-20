@@ -1,0 +1,68 @@
+{% set pageTitle = 'Illustration Projects' %}
+{% set pageClass = 'projects-inner' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    <section class="logo-and-bi pt-2 pt-md-5 pb-md-4">
+        <div class="container-fluid">
+            <div class="col-lg-11 mx-auto">
+                <div class="row pb-4">
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <h1 class="text-black display-5 font-weight-400">
+                            Illustration Projects
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="d-flex pt-3">
+                            <div class="p-2">
+                                <a href="/{{ path('project-all-works-group.html') }}">
+                                    <img class="img-fluid" src="https://via.placeholder.com/560x370" alt="project">
+                                    <br>
+                                    <small class="small-1">LOGO DESIGN FOR PLUMBER COMPANY</small>
+                                </a>
+                            </div>
+                            <div class="p-2">
+                                <img class="img-fluid" src="https://via.placeholder.com/335x320" alt="project">
+                                <br>
+                                <small class="small-2">DESIGN INSPIRATION</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center text-lg-left">
+                    <div class="col-lg-4">
+                        <a href="">
+                            <img class="img-fluid" src="https://via.placeholder.com/560x370" alt="project">
+                            <br>
+                            <small class="small-3">LOGO DESIGN FOR ART GALLERY </small>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="">
+                            <img class="img-fluid" src="https://via.placeholder.com/560x370" alt="project">
+                            <br>
+                            <small class="small-3">LOGO DESIGN FOR LAWYER COMPANY</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="">
+                            <img class="img-fluid" src="https://via.placeholder.com/560x370" alt="project">
+                            <br>
+                            <small class="small-3">LOGO DESIGN FOR LAWYER COMPANY</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

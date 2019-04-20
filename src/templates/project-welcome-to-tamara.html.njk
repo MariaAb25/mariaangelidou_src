@@ -1,0 +1,51 @@
+{% set pageTitle = '"Welcome to Tamara"' %}
+{% set pageClass = 'project illustration' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-illustration.html',
+        next_url: 'project-museum-promo.html',
+        prev_url: 'project-qobrix.html',
+        intro_title: 'ILLUSTRATION FOR WEBSITE DESIGN',
+        intro_img: 'images/project/tamara/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">"Welcome to Tamara"</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    This is a project from my University years. In this project we had to create an illustration book
+                    that presents the "Welcome to Tamara" book story.
+                    I used illustrations made from collage, drawings, textures, pictures and scans to complete it.
+                    By using small pieces of the book story we had to present our point to view of the story in our own
+                    unique and creative ways.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/tamara/img-1.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/tamara/img-2.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/tamara/img-3.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/tamara/img-4.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

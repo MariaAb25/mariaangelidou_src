@@ -1,0 +1,49 @@
+{% set pageTitle = 'Museum Promotion' %}
+{% set pageClass = 'project illustration' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-illustration.html',
+        next_url: 'project-the-waitress.html',
+        prev_url: 'project-welcome-to-tamara.html',
+        intro_title: 'ILLUSTRATION FOR MUSEUMS',
+        intro_img: 'images/project/museum-promo/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">Museum Promotion</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    This is a project from my University years. In this project we had to promote the museums of Nicosia.
+                    I used illustrations made from collage to complete it.
+                    The message I ment to pass through was to create the curiosity of people to learn about their past,
+                    get to know their roots and where they come from.
+                    My target audience was for all the ages.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/museum-promo/img-1.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/museum-promo/img-2.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

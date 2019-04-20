@@ -1,0 +1,46 @@
+{% set pageTitle = 'T-Shirt Designs' %}
+{% set pageClass = 'project other' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects.html',
+        next_url: '',
+        prev_url: '',
+        intro_title: 'T-SHIRT DESIGNS',
+        intro_img: 'images/project/t-shirts/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">T-Shirt Designs</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    This was a project from my University years. I had the opportunity to draw, to play with collage
+                    pieces and use the to make T-Shirts for men.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/t-shirts/img-1.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/t-shirts/img-2.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

@@ -1,0 +1,50 @@
+{% set pageTitle = 'QOBRIX' %}
+{% set pageClass = 'project illustration' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-illustration.html',
+        next_url: 'project-welcome-to-tamara.html',
+        prev_url: 'project-the-waitress.html',
+        intro_title: 'ILLUSTRATION FOR WEBSITE DESIGN',
+        intro_img: 'images/project/qobrix/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">QOBRIX</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    QOBRIX was an internal project for the company I used to work with.
+                    I had the opportunity to experiment with my illustration skills that matched with the Brand Identity of the company.
+                    I designed the website, logo, illustrations (except the animals), business cards, icons etc.
+                    I enjoyed making it because of the freedom the company gave me.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/qobrix/img-1.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/qobrix/img-2.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/qobrix/img-3.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/qobrix/img-4.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+
