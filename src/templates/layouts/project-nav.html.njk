@@ -1,0 +1,41 @@
+<section class="project-cover pt-4">
+    <div class="container">
+        {% if project_nav.back_url|length %}
+            <a href="/{{ path(project_nav.back_url) }}">< Back</a>
+        {% else %}
+            <a href="#">< Back</a>
+        {% endif %}
+        <div class="nav-cover pt-3">
+            <div class="cover-image">
+                <div class="col-lg-8 mx-auto">
+                    {% if project_nav.intro_img|length %}
+                        <img class="img-fluid border border-grey" src="{{ asset(project_nav.intro_img) }}" alt="project">
+                    {% endif %}
+                    {% if project_nav.intro_title|length %}
+                        <p class="small-1">{{ project_nav.intro_title }}</p>
+                    {% endif %}
+                </div>
+                <div class="nav-arrows d-flex align-items-center justify-content-end justify-content-lg-between h-100">
+                    <div class="p-2 text-left">
+                        {% if project_nav.prev_url|length %}
+                            <a href="/{{ path(project_nav.prev_url) }}">
+                                Previous
+                            </a>
+                        {% else %}
+                            <a href="#">Previous</a>
+                        {% endif %}
+                    </div>
+                    <div class="p-2">
+                        {% if project_nav.next_url|length %}
+                            <a href="/{{ path(project_nav.next_url) }}">
+                                Next
+                            </a>
+                        {% else %}
+                            <a href="#">Next</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

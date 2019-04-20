@@ -1,0 +1,33 @@
+.projects {
+
+  background-color: #FE9DBA!important;
+
+  .navbar.bg-white {
+    background-color: #FE9DBA!important;
+  }
+
+  .overview .project-card {
+    margin-bottom: 1.2rem;
+  }
+
+
+  @media (max-width : 992px) {
+
+    .navbar {
+      background-color: #FE9DBA!important;
+    }
+
+  }
+
+
+  @media (min-width : 1400px) {
+
+    .overview .project-card {
+      margin-bottom: 1.8rem;
+      margin-left: 0.6rem;
+    }
+
+  }
+
+
+}
