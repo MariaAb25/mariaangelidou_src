@@ -1,0 +1,48 @@
+{% set pageTitle = 'RENÉE Web Design' %}
+{% set pageClass = 'project websites' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-websites.html',
+        next_url: 'project-rik.html',
+        prev_url: 'project-compass.html',
+        intro_title: 'WEBSITE DESIGN',
+        intro_img: 'images/project/renee/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">RENÉE Web Design</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    RENÉE is a new fashion brand from a director of a famous fashion magazine in Cyprus that requested
+                    from the company I used to work to create their website.
+                    In this website I wanted to present the elegant and modern style of my client and her brand identity.
+                    This design is fully responsive with friendly and easy navigation for the best user experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/renee/img-1.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/renee/img-2.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

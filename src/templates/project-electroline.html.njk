@@ -1,0 +1,47 @@
+{% set pageTitle = 'Electroline Web Design' %}
+{% set pageClass = 'project websites' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-websites.html',
+        next_url: 'project-city-markets.html',
+        prev_url: 'project-content-factory.html',
+        intro_title: 'WEBSITE DESIGN',
+        intro_img: 'images/project/electroline/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">Electroline Web Design</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    Electroline was one of the Clients of the company I used to work with. I was the designer in charge
+                    of one of the big redesigns of Electoline.The client requested for a clean, modern and user
+                    friendly navigation but on the other hand to keep the main characteristics of the previous designs
+                    the company I used to work made.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/electroline/img-1.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

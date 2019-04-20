@@ -1,0 +1,48 @@
+{% set pageTitle = 'Compass Group' %}
+{% set pageClass = 'project websites' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-websites.html',
+        next_url: 'project-renee.html',
+        prev_url: 'project-city-markets.html',
+        intro_title: 'WEBSITE DESIGN & LOGO',
+        intro_img: 'images/project/compass/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">Compass Group</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    In this project, I was assigned from the company I used to work to create the brand Identity of
+                    Compass Group.
+                    That includes the logo, website and business cards.
+                    This website is also a box style design with sharp and clean lines that brings out the stability
+                    and the professionalism of the company.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/compass/img-1.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

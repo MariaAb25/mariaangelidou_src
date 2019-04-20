@@ -1,0 +1,38 @@
+{% set pageTitle = 'Content Factory' %}
+{% set pageClass = 'project websites' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-websites.html',
+        next_url: 'project-electroline.html',
+        prev_url: 'project-rik.html',
+        intro_title: 'WEBSITE DESIGN',
+        intro_img: 'images/project/content-factory/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">Content Factory</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    Content Factory was an internal project for the company I used to work with.
+                    I had the opportunity to experiment with the boxing style that was a big trend at the time I design the website.
+                    I enjoyed making it because of the freedom the company gave me.
+                </p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+

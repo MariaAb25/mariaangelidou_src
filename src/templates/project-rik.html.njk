@@ -1,0 +1,47 @@
+{% set pageTitle = 'Rik Web Design' %}
+{% set pageClass = 'project websites' %}
+
+{% extends 'layouts/base.html.njk' %}
+
+{% block content %}
+
+    {% set project_nav = {
+        back_url: 'projects-websites.html',
+        next_url: 'project-content-factory.html',
+        prev_url: 'project-renee.html',
+        intro_title: 'WEBSITE DESIGN',
+        intro_img: 'images/project/rik/intro.jpg'
+    } %}
+
+    {% include 'layouts/project-nav.html.njk'  %}
+
+    <section class="project-intro pt-2">
+        <div class="container">
+            <div class="col-lg-9 col-xl-7 mx-auto">
+                <h1 class="mb-4 display-6 font-weight-400 text-center">Rik Web Design</h1>
+                <hr class="mb-4 light">
+                <p class="mt-4 small text-center">
+                    After the new brand identity of Rik the company I used to work was assigned to design a new website.
+                    In this website I had the task to make a simple website with modern style and most importantly a user
+                    friendly navigation.Because the target audience of Rik includes older ages as well, I had to made
+                    the designs as clean and simple as possible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-images pt-4">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/rik/img-1.jpg') }}" alt="project">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+
+
+
