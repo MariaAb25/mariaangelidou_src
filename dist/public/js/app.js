@@ -9,4 +9,8 @@ jQuery(function () {
     else{
         $('.navbar-nav a[href="' + this.location.pathname + '"]').parent().addClass('active');
     }
+
+    // Img animation
+    $( '.project-cover img' ).css('opacity', '1');
 });
+

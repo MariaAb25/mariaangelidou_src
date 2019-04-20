@@ -1,4 +1,4 @@
-{% set pageTitle = 'All Works Group' %}
+{% set pageTitle = 'I-CREAM BITES' %}
 {% set pageClass = 'project' %}
 
 {% extends 'layouts/base.html.njk' %}
@@ -7,8 +7,8 @@
 
     {% set project_nav = {
         back_url: 'projects-logo-and-bi.html',
-        next_url: 'project-all-works-group.html',
-        prev_url: 'project-all-works-group.html',
+        next_url: 'project-og-legal.html',
+        prev_url: 'project-ibwe-art-gallery.html',
         intro_title: 'LOGO DESIGN',
         intro_img: 'images/project/icream/intro.jpg'
     } %}
@@ -18,14 +18,14 @@
     <section class="project-intro pt-2">
         <div class="container">
             <div class="col-lg-9 col-xl-7 mx-auto">
-                <h1 class="mb-4 display-6 font-weight-400 text-center">All Works Group</h1>
+                <h1 class="mb-4 display-6 font-weight-400 text-center">I-CREAM BITES</h1>
                 <hr class="mb-4 light">
                 <p class="mt-4 small text-center">
-                    ly dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's sIn this projec
-                    ttandard dummy text ever since the 1500s, when an unknown printer took a galley of type and In this project
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the In this project
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    This is my personal project. I made a logo for an ice-cream shop.
+                    I wanted to unfold my creativity, explore my illustration skills and make something tasty.
+                    The process was interesting because I firstly drawn ice creams then I digitalised my drawing to
+                    present the final logo with bright colors and textures.
+                    I used illustrator and photoshop to complete it.
                 </p>
             </div>
         </div>
@@ -34,11 +34,11 @@
     <section class="project-images pt-4">
         <div class="container">
             <div class="col-lg-8 mx-auto">
-                <img class="mb-4 img-fluid border border-grey" src="{{ asset('images/project/icream/img-1.jpg') }}" alt="project">
-                <img class="mb-4 img-fluid border border-grey" src="{{ asset('images/project/icream/img-2.jpg') }}" alt="project">
-                <img class="mb-4 img-fluid border border-grey" src="{{ asset('images/project/icream/img-3.jpg') }}" alt="project">
-                <img class="mb-4 img-fluid border border-grey" src="{{ asset('images/project/icream/img-4.jpg') }}" alt="project">
-                <img class="mb-4 img-fluid border border-grey" src="{{ asset('images/project/icream/img-5.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/icream/img-1.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/icream/img-2.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/icream/img-3.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/icream/img-4.jpg') }}" alt="project">
+                <img class="lazyload mb-4 img-fluid border border-grey" data-src="{{ asset('images/project/icream/img-5.jpg') }}" alt="project">
             </div>
         </div>
     </section>
