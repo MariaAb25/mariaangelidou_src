@@ -12,15 +12,16 @@ jQuery(function () {
 
     // Img animation
     $( '.project-cover img' ).css('opacity', '1');
-    $( '.projects-inner section' ).css('opacity', '1');
 
-    ScrollReveal().reveal('.projects-inner img', {
+    $( '.projects-inner .main' ).css('opacity', '1');
+
+    ScrollReveal().reveal('.projects-inner .main img', {
         delay: 1200,
         useDelay: 'onload',
         reset: true,
     });
 
-    ScrollReveal().reveal('.projects-inner img:first-child', {
+    ScrollReveal().reveal('.projects-inner .main img:first-child', {
         delay: 0,
         interval: 80
     })
