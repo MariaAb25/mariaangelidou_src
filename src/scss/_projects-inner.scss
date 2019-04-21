@@ -1,5 +1,9 @@
 .projects-inner{
 
+  .line-height{
+    line-height: 1.3;
+  }
+
   .main {
     opacity: 0;
     -webkit-transition: 0.1s;
@@ -10,6 +14,10 @@
   }
 
   @media (max-width : 992px) {
+    h1 {
+      font-size:2.7rem;
+      margin-bottom:0;
+    }
     .navbar-nav {
       background-color: #FE9DBA!important;
     }

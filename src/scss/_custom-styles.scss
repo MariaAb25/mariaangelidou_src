@@ -16,8 +16,12 @@ body{
   transition: opacity 300ms;
 }
 
-.border-grey {
+.navbar-dark .navbar-nav .nav-link.border-grey {
   border-color:#BBBBBB!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(55,52,52,.9);
 }
 
 .main {
