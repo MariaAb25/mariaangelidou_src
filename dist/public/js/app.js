@@ -19,11 +19,13 @@ jQuery(function () {
         delay: 1200,
         useDelay: 'onload',
         reset: true,
+        mobile: false
     });
 
     ScrollReveal().reveal('.projects-inner .main img:first-child', {
         delay: 0,
-        interval: 80
+        interval: 80,
+        mobile: false
     })
 });
 
