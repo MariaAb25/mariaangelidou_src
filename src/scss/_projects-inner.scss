@@ -1,5 +1,14 @@
 .projects-inner{
 
+  section {
+    opacity: 0;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+  }
+
   @media (max-width : 992px) {
     .navbar-nav {
       background-color: #FE9DBA!important;
